@@ -2,11 +2,24 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
+using api.Models;
 
 namespace api.Data
 {
-    public class ApplicationDbContext : 
+    public class ApplicationDBContext : DbContext
     {
+        public ApplicationDBContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+        {
+        }
+
+        // Adding Table
+        public DbSet<Stocks> Stocks {get; set;}
+        
+        public DbSet<Comment> Comments {get; set;}
+
+
         
     }
 }
