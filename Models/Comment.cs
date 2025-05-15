@@ -15,6 +15,6 @@ namespace api.Models
         // -> Day la 1 Reference NP the hien mqh Many - 1
         // -> Nhieu Comment se co duy nhat 1 Stocks
         public int? StockId { get; set; }
-        public Stocks? Stock { get; set; }
+        public Stock? Stock { get; set; }
     }
 }
