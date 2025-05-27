@@ -12,7 +12,8 @@ namespace api.Mappers
         
         public static StockDto ToStockDto(this Stock stockModel){
 
-            return new StockDto{
+            return new StockDto
+            {
                 Id = stockModel.Id,
                 Symbol = stockModel.Symbol,
                 CompanyName = stockModel.CompanyName,
@@ -20,6 +21,7 @@ namespace api.Mappers
                 LastDiv = stockModel.LastDiv,
                 Industry = stockModel.Industry,
                 MarketCap = stockModel.MarketCap,
+                Comments = stockModel.Comments.Select(c => c.ToCommentDto()).ToList()
             };
         }
 

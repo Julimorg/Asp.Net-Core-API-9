@@ -172,3 +172,10 @@ F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\a
 F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\runtimes\win-x64\native\krb5_64.dll
 F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\runtimes\win-x64\native\krbcc64.dll
 F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\Newtonsoft.Json.dll
+F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\Programming\File programming\Website Dev Project\ASPNETCore\LeanringProject\api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
