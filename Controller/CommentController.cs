@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using api.Dtos.CreateCommentDto;
+using api.Dtos.UpdateCommentRequestDto;
 using api.Interfaces;
 using api.Mappers;
 using Microsoft.AspNetCore.Mvc;
@@ -58,8 +59,23 @@ namespace api.Controller
 
             await _commentRepo.CreateAsync(commentModel);
 
-            return CreatedAtAction(nameof(GeById), new { id = commentModel }, commentModel.ToCommentDto());
+            return CreatedAtAction(nameof(GeById), new { id = commentModel.Id}, commentModel.ToCommentDto());
         }
+
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateCommentRequestDto updateDto)
+        {
+            var comment = await _commentRepo.UpdateAsync(id, updateDto.ToCommentFromUpdate());
+
+            if (comment == null)
+            {
+                return NotFound("Comment not found");
+            }
+
+            return Ok(comment.ToCommentDto());
+        }
+
 
         
     }
